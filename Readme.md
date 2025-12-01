@@ -1,4 +1,5 @@
-## File I/O Stream 
-- FIle IO Stream for continuous reading/writing of data.
-- FileInputStream, FileOutputStream. ( For binary data like Images, audio and PDF Files )
-- FileReader, FileWriter, BufferedReader, BufferedWriter. ( Characters and Strings )
+## I/O Streams
+- Scanner - best for simple text and when you want to parse numbers or words easily.
+- BufferedReader ( BufferedReader, BufferedWriter ) - best for large text files, because it is faster and reads line by line.
+- FileReader ( FileReader, FileWriter ) - best for simple character data when you don't need advanced features like buffering.
+- FileInputStream ( FileInputStream, FileOutputStream ) - best for binary data (images, audio, PDFs) or when you need full control of raw bytes.

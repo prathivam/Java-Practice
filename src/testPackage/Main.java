@@ -1,6 +1,7 @@
 package testPackage;
 
 import FIleInputOutputStream.FileInputStreamExample;
+import FIleInputOutputStream.FileOutputStreamExample;
 
 public class Main {
 
@@ -114,5 +115,7 @@ public class Main {
 
 //        Reading Data using File Stream ( For Images , PDF types formats )
         FileInputStreamExample fis = new FileInputStreamExample();
+//        Output using File Output Stream
+        FileOutputStreamExample foutput = new FileOutputStreamExample();
     }
 }
