@@ -1,7 +1,9 @@
 package testPackage;
 
+import BufferedReader.BufferedWriterExample;
 import FIleInputOutputStream.FileInputStreamExample;
 import FIleInputOutputStream.FileOutputStreamExample;
+import BufferedReader.BufferedReaderExample;
 
 public class Main {
 
@@ -117,5 +119,10 @@ public class Main {
         FileInputStreamExample fis = new FileInputStreamExample();
 //        Output using File Output Stream
         FileOutputStreamExample foutput = new FileOutputStreamExample();
+
+//        Buffered Reader - reading line by line
+        BufferedReaderExample bfexample = new BufferedReaderExample();
+//        Buffered Writer - writing to a text file
+        BufferedWriterExample bfwExample = new BufferedWriterExample();
     }
 }
