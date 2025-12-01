@@ -107,5 +107,8 @@ public class Main {
 
 //        File Handling
         FileHandling fileName = new FileHandling();
+
+//        Reading Files
+        ReadingFiles readingFileObj = new ReadingFiles();
     }
 }
