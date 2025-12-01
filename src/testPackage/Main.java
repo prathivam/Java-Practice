@@ -110,5 +110,8 @@ public class Main {
 
 //        Reading Files
         ReadingFiles readingFileObj = new ReadingFiles();
+
+//        Deleting Files
+        DeletingFiles deleteFilesObj = new DeletingFiles();
     }
 }
