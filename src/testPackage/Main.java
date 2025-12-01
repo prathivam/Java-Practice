@@ -1,7 +1,13 @@
+package testPackage;
+
+import java.io.IOException;
+import java.util.logging.Level;
+
+
 public class Main {
 
-    static int plusMethodInt(int x,int y){
-        return x + y;
+    static int plusMethodInt(int x1,int y1){
+        return x1 + y1;
     }
     static double plusMethodDouble(double x, double y){
         return x + y;
@@ -12,6 +18,11 @@ public class Main {
 //    Constructor
     public Main(){
         System.out.println("This is the constructor of Main Class");
+        InheritanceExampleChild inheritanceObj = new InheritanceExampleChild();
+        inheritanceObj.displayInfo();
+
+        InheritanceTwo innerTwo = new InheritanceTwo();
+        innerTwo.sound();
     }
 
     public static void main() {
@@ -26,7 +37,7 @@ public class Main {
         System.out.println(name.indexOf("man"));
 
 //      chatAt() Method.
-        String text = "brucelee";
+        String text = "bruce lee";
         System.out.println(text.charAt(2));
 
         String textFinal = "The Name\"(s) is Heisenberg";
@@ -54,17 +65,47 @@ public class Main {
 
 //        Method Overloading
         System.out.println("Integer Addition: "+ plusMethodInt(1,2));
+        System.out.println("Integer Addition: "+ plusMethodInt(2,3));
         System.out.println("Double Addition: "+ plusMethodDouble(1.5,2.5));
+        System.out.println("Double Addition: "+ plusMethodDouble(2.5,3.5));
 
 //      Main Class Variable
         Main myObj = new Main();
         System.out.println("Variable of First class is: " + myObj.class_variable_1);
-//        "Second" Class Variable
-        System.out.println("Variable of Second Class is: " + Second.class_variable_2);
 
+
+//        Example.java File
+        Example exampleObj = new Example();
+        exampleObj.displayData();
+//        exampleObj.printSomeData()
+
+//      Encapsulation Example
+        ClassesExample classObj = new ClassesExample();
+        classObj.setName("Testing");
+        System.out.println("Encapsulated Name is: " + classObj.getName());
+
+//      Abstraction Example
+        AbstractionExample absClass = new AbstractionExample();
+        absClass.printAbstractMethod();
+
+//      Abstraction by Interface
+        InterfaceExampleChild interfaceObj = new InterfaceExampleChild();
+        interfaceObj.carSound();
+        interfaceObj.run();
+
+//      Anonymous Class Example
+        SampleClassAnonymous anonymousObj = new SampleClassAnonymous(){
+            public void playChess(){
+                System.out.println("This is the Overridden method of Anonymous Class");
+            }
+        };
+        anonymousObj.playChess();
+
+//        Enum Example
+        Number_List enumObj = Number_List.ONE;
+        enumObj.getDescription();
+
+//        File Handling
+        FileHandling fileName = new FileHandling();
     }
-}
-
-class Second {
-    static int class_variable_2 = 20;
 }
