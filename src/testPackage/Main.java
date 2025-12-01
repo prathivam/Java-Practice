@@ -1,8 +1,6 @@
 package testPackage;
 
-import java.io.IOException;
-import java.util.logging.Level;
-
+import FIleInputOutputStream.FileInputStreamExample;
 
 public class Main {
 
@@ -113,5 +111,8 @@ public class Main {
 
 //        Deleting Files
         DeletingFiles deleteFilesObj = new DeletingFiles();
+
+//        Reading Data using File Stream ( For Images , PDF types formats )
+        FileInputStreamExample fis = new FileInputStreamExample();
     }
 }
