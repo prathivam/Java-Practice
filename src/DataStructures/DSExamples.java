@@ -3,6 +3,7 @@ package DataStructures;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class DSExamples {
     public DSExamples(){
@@ -14,6 +15,11 @@ public class DSExamples {
         animals.add("Fox");
 
         System.out.println("\n ArrayList items = " + animals);
+//      Iterator for ArrayList
+        Iterator<String> item = animals.iterator();
+        while(item.hasNext()){
+            System.out.println(item.next());
+        }
 
 //        HashSet - No Duplicates
         HashSet<String> companies = new HashSet<String>();

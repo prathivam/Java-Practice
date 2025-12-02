@@ -1,6 +1,8 @@
 package testPackage;
 
 import BufferedReader.BufferedWriterExample;
+import DataStructures.MapExample;
+import DataStructures.SetExample;
 import FIleInputOutputStream.FileInputStreamExample;
 import FIleInputOutputStream.FileOutputStreamExample;
 import BufferedReader.BufferedReaderExample;
@@ -124,5 +126,11 @@ public class Main {
         BufferedReaderExample bfexample = new BufferedReaderExample();
 //        Buffered Writer - writing to a text file
         BufferedWriterExample bfwExample = new BufferedWriterExample();
+
+//        Set Examples
+        SetExample setObj = new SetExample();
+
+//        Map Example
+        MapExample mapItem = new MapExample();
     }
 }
