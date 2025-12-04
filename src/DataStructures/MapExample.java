@@ -32,5 +32,6 @@ public class MapExample {
 
         System.out.println("Linked Hash Map Size = "+ linkedHashExample.size());
         System.out.println("Linked Hash Map Item = "+ linkedHashExample.get("SRK"));
+        System.out.println("Full Linked Hash Map = " + linkedHashExample);
     }
 }

@@ -3,6 +3,7 @@ package testPackage;
 import BufferedReader.BufferedWriterExample;
 import DataStructures.MapExample;
 import DataStructures.SetExample;
+import ExtraTopics.GenericsExample;
 import FIleInputOutputStream.FileInputStreamExample;
 import FIleInputOutputStream.FileOutputStreamExample;
 import BufferedReader.BufferedReaderExample;
@@ -132,5 +133,11 @@ public class Main {
 
 //        Map Example
         MapExample mapItem = new MapExample();
+
+//        Generics Example
+        GenericsExample<String> obj1 = new GenericsExample<>();
+        obj1.set("Panda");
+        var xFinal = obj1.get();
+        System.out.println("\n Output from Generics = " + xFinal);
     }
 }
